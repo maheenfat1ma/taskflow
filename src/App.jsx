@@ -153,9 +153,8 @@ function App() {
             <p className="text-sm text-gray-500">
               Total Projects
             </p>
-
             <h3 className="mt-2 text-3xl font-bold text-gray-900">
-              12
+              {new Set(tasks.map((task) => task.project)).size}
             </h3>
           </div>
 
